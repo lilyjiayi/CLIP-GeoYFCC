@@ -25,6 +25,14 @@ The metadata file is available at [this Google Drive link](https://drive.google.
 
 To match the design of [Domainnet](https://ai.bu.edu/M3SDA/#dataset), a popular multi-domain image dataset, and to further clean up the dataset, we rank samples in CLIP-GeoYFCC by their similarity scores with labels matched by CLIP and select the top 1M samples. The domain of Oceania is removed because it accounts for less than 4% of the total images. To ensure that each class has sufficient samples for training, we select the 350 largest classes where each class has at least 450 samples. For any class with more than 2k samples, we randomly sub-sample to limit it to 2k samples. The resulting 350 class subset with 338,730 images is called **CLIP-GeoYFCC-350**. From here, we further subsample 45 classes to form **CLIP-GeoYFCC-45** containing 86,288 images. These two datasets mirror two publicly released Domainnet versions, Domainnet-345 with 345 classes and 586,575 samples and Domainnet-40 with 40 classes and 72,614 samples.
 
+
+| Dataset / Subset | # of classes | # of samples | File Link |
+| ----------- | ----------- | ----------- | ----------- |
+| CLIP-GeoYFCC | 18,814 | 1,146,768 | [metadata file](https://drive.google.com/file/d/1GT44IiEGIGgnW_WXGnGWO77YQjIpnW5e/view?usp=sharing) | 
+| CLIP-GeoYFCC-350 | 350 | 338,730 | [350_sample_indices.npy](https://github.com/lilyjiayi/CLIP-GeoYFCC/blob/main/350_sample_indices.npy) |
+| CLIP-GeoYFCC-45 | 45 | 72,614 | [45_sample_indices.npy](https://github.com/lilyjiayi/CLIP-GeoYFCC/blob/main/45_sample_indices.npy) |
+
+
 If you find this dataset useful, please consider citing our work below.
 ```
 @misc{title={Benchmarking Multi-Domain Active Learning on Image Classification}, 
