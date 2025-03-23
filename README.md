@@ -1,7 +1,10 @@
 # CLIP-GeoYFCC
 
 ## Description
-This repository contains a link to the metadata and instructions of CLIP-GeoYFCC, a large-scale multi-domain image dataset built around realistic geographical domains. CLIP-GeoYFCC is introduced in the paper "[Benchmarking Multi-domain Active Learning on Image Classification](https://doi.org/10.48550/arXiv.2312.00364)" and is constructed based on [GeoYFCC](https://github.com/abhimanyudubey/GeoYFCC?tab=readme-ov-file) with relabeling and rebalancing.
+This repository hosts **CLIP-GeoYFCC**, a **large-scale multi-domain image dataset** built around realistic geographical domains. CLIP-GeoYFCC is introduced in the paper "[Benchmarking Multi-domain Active Learning on Image Classification](https://doi.org/10.48550/arXiv.2312.00364)" and is constructed based on [GeoYFCC](https://github.com/abhimanyudubey/GeoYFCC?tab=readme-ov-file) with relabeling and rebalancing.
+
+![Comparison of CLIP-GeoYFCC and Domainnet](illustration.png)
+*Samples of domain differences in CLIP-GeoYFCC and Domainnet*. Rows indicate domains and columns indicate classes. Compared with existing domain-focused datasets, CLIP-GeoYFCC is entirely composed of in-the-wild images. CLIP-GeoYFCC is tailored to test the performances of algorithms under real life domain differences.
 
 The original GeoYFCC dataset contains a subset of the [YFCC100M dataset](https://multimediacommons.wordpress.com/yfcc100m-core-dataset/), that are partitioned based on the images' country of origin. To obtain the original images of YFCC100M, users could download them via [this API](https://pypi.org/project/yfcc100m/). 
 
